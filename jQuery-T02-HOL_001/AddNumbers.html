@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$("button").click(function(){
+var n1=parseInt($("#first").val());
+var n2=parseInt($("#second").val());
+
+if(n1>=0 && n2>=0){
+var add=n1+n2;
+$("#message").val(add).css("color", "green");
+$("#answer").val(add);
+}
+else{
+
+$("#message").text("Pls.Enter the Values").css("color", "red");
+}
+
+});
+
+});
+</script>
+<style>
+table, td {
+  border: 1px solid black;
+
+}
+#answer{
+background-color:#F5F5F5;
+}
+</style>
+</head>
+<body>
+
+<div id="message" ></div>
+
+<table id="table1" cellspacing="2px" cellpadding="1%"">
+<tr>
+<td><label>Enter First Number:</label></td>
+<td><input type="text" id="first" placeholder="Enter First Number"/></td>
+</tr>
+<tr>
+<td><label>Enter Second Number</label></td>
+<td><input type="text" id="second" placeholder="Enter Second Number"/></td>
+</tr>
+<tr>
+<td><label for="displayValue">Answer</label></td>
+<td><input type="text" id="answer" placeholder="Answer"/></td>
+</tr>
+<tr>
+<td><label>Submit</label></td>
+<td><button type="submit" id="sub">ADD</button></td>
+</tr>
+</table>
+
+</body>
+
+</html>
+
+
+
+

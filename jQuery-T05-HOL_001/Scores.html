@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<style>	
+body {
+    font-family: sans-serif;
+}
+table{
+    background-color: #E8DCFF;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table td{
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+input{
+    background-color: #FEFFB0;
+}
+
+#sumLabel, #sumValue {
+    color: #174C68;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+</style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>Math 1</td>
+                <td><input type="text" id="m1Mark"></td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Math 2</td>
+                <td><input type="text" id="m2Mark"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Science</td>
+                <td><input type="text" id="scienceMark"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>English</td>
+                <td><input type="text" id="englishMark"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sanskrit</td>
+                <td><input type="text" id="sanskritMark"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Social Science</td>
+                <td><input type="text" id="socialMark"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="sumLabel">Sum:</td>
+                <td><p id="sumValue"></td>
+            </tr>
+
+        </table>
+        
+        <script src="Scores.js"></script>
+    </body>
+</html>
+
+
+
